@@ -8,6 +8,7 @@ import {applyMiddleware, compose, createStore} from "redux";
 import reducers from "./store/reducers";
 import watchers from "./store/sagas";
 import {Provider} from "react-redux";
+import StyledApp from "./StyledApp";
 
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -20,7 +21,7 @@ const store = createStore(
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-                <App/>
+                <StyledApp/>
         </Provider>
     </React.StrictMode>
     ,

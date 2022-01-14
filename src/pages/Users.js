@@ -14,7 +14,7 @@ const Users = () => {
 
     if(usersRequestStatus==="request"){
         return (
-            <div>Loadingg</div>
+            <div>Loading</div>
         )
     }
 
